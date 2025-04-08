@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 using AutoMapper;
 using CaseItau.API.Application.Exceptions;
 using CaseItau.API.Application.Repositories;
-using CaseItau.API.Application.Services.Model;
-using CaseItau.API.Entities;
+using CaseItau.API.Application.Services.Models;
+using CaseItau.API.Domain.Entities;
 
 namespace CaseItau.API.Application.Services
 {

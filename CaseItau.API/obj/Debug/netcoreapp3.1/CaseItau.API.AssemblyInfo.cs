@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CaseItau.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81d5db7befab315a9a41b6f1fa2737301d481dad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dda52cd27354a84a7511a5e89bef4bea4f584a5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CaseItau.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CaseItau.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

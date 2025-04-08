@@ -5,7 +5,7 @@ using System.Net;
 using System.Threading.Tasks;
 using CaseItau.API.Application.Exceptions;
 using CaseItau.API.Application.Services;
-using CaseItau.API.Application.Services.Model;
+using CaseItau.API.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CaseItau.API.Controllers

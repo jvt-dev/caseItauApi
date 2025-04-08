@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using CaseItau.API.Application.Services.Model;
-using CaseItau.API.Entities;
+using CaseItau.API.Application.Services.Models;
+using CaseItau.API.Domain.Entities;
 
 namespace CaseItau.API.Application.Mappers
 {

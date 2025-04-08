@@ -1,4 +1,4 @@
-﻿namespace CaseItau.API.Application.Services.Model
+﻿namespace CaseItau.API.Application.Services.Models
 {
     public class FundoModel
     {

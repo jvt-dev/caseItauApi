@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = CaseItau.Application
-build_property.ProjectDir = C:\Projetos\caseItauApi\CaseItau.Application\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 

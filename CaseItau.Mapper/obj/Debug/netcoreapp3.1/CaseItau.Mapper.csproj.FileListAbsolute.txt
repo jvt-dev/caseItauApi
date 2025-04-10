@@ -1,0 +1,15 @@
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\bin\Debug\netcoreapp3.1\CaseItau.Mapper.deps.json
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\bin\Debug\netcoreapp3.1\CaseItau.Mapper.dll
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\bin\Debug\netcoreapp3.1\CaseItau.Mapper.pdb
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\bin\Debug\netcoreapp3.1\CaseItau.Domain.dll
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\bin\Debug\netcoreapp3.1\CaseItau.Shared.dll
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\bin\Debug\netcoreapp3.1\CaseItau.Domain.pdb
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\bin\Debug\netcoreapp3.1\CaseItau.Shared.pdb
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.csproj.AssemblyReference.cache
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.AssemblyInfoInputs.cache
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.AssemblyInfo.cs
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.csproj.CoreCompileInputs.cache
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.csproj.CopyComplete
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.dll
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Mapper\obj\Debug\netcoreapp3.1\CaseItau.Mapper.pdb

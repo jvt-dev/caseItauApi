@@ -33,6 +33,11 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "CaseItau.Application": "1.0.0",
+          "CaseItau.Domain": "1.0.0",
+          "CaseItau.Infrastructure": "1.0.0",
+          "CaseItau.Mapper": "1.0.0",
+          "CaseItau.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.32",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.32",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
@@ -2136,6 +2141,63 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "CaseItau.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "CaseItau.Domain": "1.0.0",
+          "CaseItau.Infrastructure": "1.0.0",
+          "CaseItau.Shared": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.32"
+        },
+        "runtime": {
+          "CaseItau.Application.dll": {}
+        },
+        "compile": {
+          "CaseItau.Application.dll": {}
+        }
+      },
+      "CaseItau.Domain/1.0.0": {
+        "runtime": {
+          "CaseItau.Domain.dll": {}
+        },
+        "compile": {
+          "CaseItau.Domain.dll": {}
+        }
+      },
+      "CaseItau.Infrastructure/1.0.0": {
+        "dependencies": {
+          "CaseItau.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.32",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.32"
+        },
+        "runtime": {
+          "CaseItau.Infrastructure.dll": {}
+        },
+        "compile": {
+          "CaseItau.Infrastructure.dll": {}
+        }
+      },
+      "CaseItau.Mapper/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "CaseItau.Domain": "1.0.0",
+          "CaseItau.Shared": "1.0.0"
+        },
+        "runtime": {
+          "CaseItau.Mapper.dll": {}
+        },
+        "compile": {
+          "CaseItau.Mapper.dll": {}
+        }
+      },
+      "CaseItau.Shared/1.0.0": {
+        "runtime": {
+          "CaseItau.Shared.dll": {}
+        },
+        "compile": {
+          "CaseItau.Shared.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4749,6 +4811,31 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "CaseItau.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CaseItau.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CaseItau.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CaseItau.Mapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CaseItau.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

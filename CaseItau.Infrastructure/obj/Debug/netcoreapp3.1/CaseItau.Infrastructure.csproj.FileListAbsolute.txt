@@ -11,3 +11,17 @@ C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Infrastructure\obj\Debug
 C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.csproj.CopyComplete
 C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.dll
 C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.pdb
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\bin\Debug\netcoreapp3.1\CaseItau.Infrastructure.deps.json
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\bin\Debug\netcoreapp3.1\CaseItau.Infrastructure.dll
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\bin\Debug\netcoreapp3.1\CaseItau.Infrastructure.pdb
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\bin\Debug\netcoreapp3.1\CaseItau.Domain.dll
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\bin\Debug\netcoreapp3.1\CaseItau.Domain.pdb
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.csproj.AssemblyReference.cache
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.AssemblyInfoInputs.cache
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.AssemblyInfo.cs
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.sourcelink.json
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.A76FCE05.Up2Date
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.dll
+C:\Projetos\caseItauApi\CaseItau.Infrastructure\obj\Debug\netcoreapp3.1\CaseItau.Infrastructure.pdb

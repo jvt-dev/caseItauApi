@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Pb88hKnzzrTJOBYDyffXQGuaWIWEXi29k702uzD3QbceRqe273AyH4MFqYMagcaVeCq0pzJZBSeYdVFPM181g==",
+  "dgSpecHash": "hAofpA7JkBw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Shared\\CaseItau.Shared.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\joaovioa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Projetos\\caseItauApi\\CaseItau.Shared\\CaseItau.Shared.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

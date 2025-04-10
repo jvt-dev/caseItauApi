@@ -2152,7 +2152,10 @@
           "Microsoft.EntityFrameworkCore": "3.1.32"
         },
         "runtime": {
-          "CaseItau.Application.dll": {}
+          "CaseItau.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "CaseItau.Application.dll": {}
@@ -2160,7 +2163,10 @@
       },
       "CaseItau.Domain/1.0.0": {
         "runtime": {
-          "CaseItau.Domain.dll": {}
+          "CaseItau.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "CaseItau.Domain.dll": {}
@@ -2173,7 +2179,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.32"
         },
         "runtime": {
-          "CaseItau.Infrastructure.dll": {}
+          "CaseItau.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "CaseItau.Infrastructure.dll": {}
@@ -2186,7 +2195,10 @@
           "CaseItau.Shared": "1.0.0"
         },
         "runtime": {
-          "CaseItau.Mapper.dll": {}
+          "CaseItau.Mapper.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "CaseItau.Mapper.dll": {}
@@ -2194,7 +2206,10 @@
       },
       "CaseItau.Shared/1.0.0": {
         "runtime": {
-          "CaseItau.Shared.dll": {}
+          "CaseItau.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "CaseItau.Shared.dll": {}

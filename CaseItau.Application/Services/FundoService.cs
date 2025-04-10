@@ -21,12 +21,12 @@ namespace CaseItau.Application.Services
 
         public async Task<IEnumerable<FundoDto>> GetAllAsync()
         {
-            return _mapper.Map<IEnumerable<FundoDto>>(await _fundoRepository.GetAll());
+            return _mapper.Map<IEnumerable<FundoDto>>(await _fundoRepository.GetAllAsync());
         }
 
-        public async Task<FundoDto> GetAsync(string codigo)
+        public async Task<FundoDto> GetByIdAsync(string codigo)
         {
-            FundoDto fundoEntity = _mapper.Map<FundoDto>(await _fundoRepository.GetEntityById(codigo));
+            FundoDto fundoEntity = _mapper.Map<FundoDto>(await _fundoRepository.GetEntityByIdAsync(codigo));
 
             if (fundoEntity is null)
             {
@@ -36,16 +36,16 @@ namespace CaseItau.Application.Services
             return fundoEntity;
         }
 
-        public async Task PostAsync(FundoDto dto)
+        public async Task<bool> PostAsync(FundoDto dto)
         {
             FundoEntity fundoEntity = _mapper.Map<FundoEntity>(dto);
 
-            await _fundoRepository.CreateAsync(fundoEntity);
+            return await _fundoRepository.CreateAsync(fundoEntity) > 0;
         }
 
-        public async Task PutAsync(string codigo, FundoDto dto)
+        public async Task<bool> PutAsync(string codigo, FundoDto dto)
         {
-            FundoEntity fundoEntity = await _fundoRepository.GetEntityById(codigo);
+            FundoEntity fundoEntity = await _fundoRepository.GetEntityByIdAsync(codigo);
 
             if (fundoEntity is null)
             {
@@ -56,24 +56,24 @@ namespace CaseItau.Application.Services
             fundoEntity.UpdateCnpj(dto.Cnpj);
             fundoEntity.UpdateCodigoTipo(dto.CodigoTipo);
 
-            await _fundoRepository.UpdateAsync(fundoEntity);
+            return await _fundoRepository.UpdateAsync(fundoEntity) > 0;
         }
 
-        public async Task DeleteAsync(string codigo)
+        public async Task<bool> DeleteAsync(string codigo)
         {
-            FundoEntity fundoEntity = await _fundoRepository.GetEntityById(codigo);
+            FundoEntity fundoEntity = await _fundoRepository.GetEntityByIdAsync(codigo);
 
             if (fundoEntity is null)
             {
                 throw new NotFoundException("Fundo não encontrado!");
             }
 
-            await _fundoRepository.DeleteAsync(fundoEntity);
+            return await _fundoRepository.DeleteAsync(fundoEntity) > 0;
         }
 
-        public async Task MovimentarPatrimonioAsync(string codigo, decimal valorPatrimonio)
+        public async Task<bool> MovimentarPatrimonioAsync(string codigo, decimal valorPatrimonio)
         {
-            FundoEntity fundoEntity = await _fundoRepository.GetEntityById(codigo);
+            FundoEntity fundoEntity = await _fundoRepository.GetEntityByIdAsync(codigo);
 
             if (fundoEntity is null)
             {
@@ -82,7 +82,7 @@ namespace CaseItau.Application.Services
 
             fundoEntity.UpdatePatrimonio(valorPatrimonio);
 
-            await _fundoRepository.UpdateAsync(fundoEntity);
+            return await _fundoRepository.UpdateAsync(fundoEntity) > 0;
         }
     }
 }

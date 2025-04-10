@@ -42,7 +42,7 @@ namespace CaseItau.API.Controllers
         {
             try
             {
-                return Ok(_mapper.Map<FundoModel>(await _fundoService.GetAsync(codigo)));
+                return Ok(_mapper.Map<FundoModel>(await _fundoService.GetByIdAsync(codigo)));
             }
             catch (NotFoundException ex)
             {

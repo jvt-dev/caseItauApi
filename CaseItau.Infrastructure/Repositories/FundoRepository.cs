@@ -15,30 +15,30 @@ namespace CaseItau.API.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task CreateAsync(FundoEntity entity)
+        public async Task<int> CreateAsync(FundoEntity entity)
         {
             await _context.Set<FundoEntity>().AddAsync(entity);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(FundoEntity entity)
+        public async Task<int> UpdateAsync(FundoEntity entity)
         {
             _context.Set<FundoEntity>().Update(entity);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(FundoEntity entity)
+        public async Task<int> DeleteAsync(FundoEntity entity)
         {
             _context.Set<FundoEntity>().Remove(entity);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync();
         }
 
-        public async Task<FundoEntity> GetEntityById(string codigo)
+        public async Task<FundoEntity> GetEntityByIdAsync(string codigo)
         {
             return await _context.Set<FundoEntity>().FindAsync(codigo);
         }
 
-        public async Task<List<FundoEntity>> GetAll()
+        public async Task<List<FundoEntity>> GetAllAsync()
         {
             return await _context.Set<FundoEntity>().ToListAsync();
         }

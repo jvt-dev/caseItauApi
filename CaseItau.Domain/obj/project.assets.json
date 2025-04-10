@@ -8,23 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\joaovioa\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\JoãoVictorTeixeira\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Domain\\CaseItau.Domain.csproj",
+      "projectUniqueName": "C:\\Projetos\\caseItauApi\\CaseItau.Domain\\CaseItau.Domain.csproj",
       "projectName": "CaseItau.Domain",
-      "projectPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Domain\\CaseItau.Domain.csproj",
-      "packagesPath": "C:\\Users\\joaovioa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Domain\\obj\\",
+      "projectPath": "C:\\Projetos\\caseItauApi\\CaseItau.Domain\\CaseItau.Domain.csproj",
+      "packagesPath": "C:\\Users\\JoãoVictorTeixeira\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\caseItauApi\\CaseItau.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\joaovioa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JoãoVictorTeixeira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,8 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://artifactory.hdi.com.br/artifactory/api/nuget/v3/nuget/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -45,7 +45,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "netcoreapp3.1": {
@@ -61,18 +67,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

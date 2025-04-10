@@ -421,7 +421,10 @@
       },
       "CaseItau.Domain/1.0.0": {
         "runtime": {
-          "CaseItau.Domain.dll": {}
+          "CaseItau.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

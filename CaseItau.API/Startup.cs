@@ -1,5 +1,7 @@
-using System;
 using CaseItau.API.Infrastructure.Extensions;
+using CaseItau.API.Infrastructure.Repositories;
+using CaseItau.API.Mapper.Mappers;
+using CaseItau.Application.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,7 +22,7 @@ namespace CaseItau.API
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddAutoMapper(typeof(FundoProfile).Assembly);
             services.AddServices();
             services.AddDatabaseContext(Configuration);
         }

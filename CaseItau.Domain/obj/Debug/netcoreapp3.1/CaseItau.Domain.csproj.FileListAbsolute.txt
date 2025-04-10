@@ -1,0 +1,10 @@
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\bin\Debug\netcoreapp3.1\CaseItau.Domain.deps.json
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\bin\Debug\netcoreapp3.1\CaseItau.Domain.dll
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\bin\Debug\netcoreapp3.1\CaseItau.Domain.pdb
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\obj\Debug\netcoreapp3.1\CaseItau.Domain.csproj.AssemblyReference.cache
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\obj\Debug\netcoreapp3.1\CaseItau.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\obj\Debug\netcoreapp3.1\CaseItau.Domain.AssemblyInfoInputs.cache
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\obj\Debug\netcoreapp3.1\CaseItau.Domain.AssemblyInfo.cs
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\obj\Debug\netcoreapp3.1\CaseItau.Domain.csproj.CoreCompileInputs.cache
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\obj\Debug\netcoreapp3.1\CaseItau.Domain.dll
+C:\Users\joaovioa\Projetos\Estudos\caseItauApi\CaseItau.Domain\obj\Debug\netcoreapp3.1\CaseItau.Domain.pdb

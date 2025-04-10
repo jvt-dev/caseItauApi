@@ -2620,6 +2620,73 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "CaseItau.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "CaseItau.Domain": "1.0.0",
+          "CaseItau.Infrastructure": "1.0.0",
+          "CaseItau.Shared": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.32"
+        },
+        "compile": {
+          "bin/placeholder/CaseItau.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseItau.Application.dll": {}
+        }
+      },
+      "CaseItau.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CaseItau.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseItau.Domain.dll": {}
+        }
+      },
+      "CaseItau.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CaseItau.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.32",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.32"
+        },
+        "compile": {
+          "bin/placeholder/CaseItau.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseItau.Infrastructure.dll": {}
+        }
+      },
+      "CaseItau.Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "CaseItau.Domain": "1.0.0",
+          "CaseItau.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CaseItau.Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseItau.Mapper.dll": {}
+        }
+      },
+      "CaseItau.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CaseItau.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseItau.Shared.dll": {}
+        }
       }
     }
   },
@@ -7711,12 +7778,42 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "CaseItau.Application/1.0.0": {
+      "type": "project",
+      "path": "../CaseItau.Application/CaseItau.Application.csproj",
+      "msbuildProject": "../CaseItau.Application/CaseItau.Application.csproj"
+    },
+    "CaseItau.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CaseItau.Domain/CaseItau.Domain.csproj",
+      "msbuildProject": "../CaseItau.Domain/CaseItau.Domain.csproj"
+    },
+    "CaseItau.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../CaseItau.Infrastructure/CaseItau.Infrastructure.csproj",
+      "msbuildProject": "../CaseItau.Infrastructure/CaseItau.Infrastructure.csproj"
+    },
+    "CaseItau.Mapper/1.0.0": {
+      "type": "project",
+      "path": "../CaseItau.Mapper/CaseItau.Mapper.csproj",
+      "msbuildProject": "../CaseItau.Mapper/CaseItau.Mapper.csproj"
+    },
+    "CaseItau.Shared/1.0.0": {
+      "type": "project",
+      "path": "../CaseItau.Shared/CaseItau.Shared.csproj",
+      "msbuildProject": "../CaseItau.Shared/CaseItau.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "CaseItau.Application >= 1.0.0",
+      "CaseItau.Domain >= 1.0.0",
+      "CaseItau.Infrastructure >= 1.0.0",
+      "CaseItau.Mapper >= 1.0.0",
+      "CaseItau.Shared >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.32",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.32",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
@@ -7725,24 +7822,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JoãoVictorTeixeira\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\joaovioa\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\case_itau_net_core\\CaseItau.API\\CaseItau.API.csproj",
+      "projectUniqueName": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.API\\CaseItau.API.csproj",
       "projectName": "CaseItau.API",
-      "projectPath": "C:\\Projetos\\case_itau_net_core\\CaseItau.API\\CaseItau.API.csproj",
-      "packagesPath": "C:\\Users\\JoãoVictorTeixeira\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\case_itau_net_core\\CaseItau.API\\obj\\",
+      "projectPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.API\\CaseItau.API.csproj",
+      "packagesPath": "C:\\Users\\joaovioa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\JoãoVictorTeixeira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\joaovioa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7750,25 +7846,37 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://artifactory.hdi.com.br/artifactory/api/nuget/v3/nuget/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Application\\CaseItau.Application.csproj": {
+              "projectPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Application\\CaseItau.Application.csproj"
+            },
+            "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Domain\\CaseItau.Domain.csproj": {
+              "projectPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Domain\\CaseItau.Domain.csproj"
+            },
+            "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Infrastructure\\CaseItau.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Infrastructure\\CaseItau.Infrastructure.csproj"
+            },
+            "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Mapper\\CaseItau.Mapper.csproj": {
+              "projectPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Mapper\\CaseItau.Mapper.csproj"
+            },
+            "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Shared\\CaseItau.Shared.csproj": {
+              "projectPath": "C:\\Users\\joaovioa\\Projetos\\Estudos\\caseItauApi\\CaseItau.Shared\\CaseItau.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "netcoreapp3.1": {
@@ -7814,6 +7922,16 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.32, 3.1.32]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7822,7 +7940,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

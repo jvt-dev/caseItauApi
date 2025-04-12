@@ -11,6 +11,17 @@ namespace CaseItau.API.Infrastructure.Extensions
             services.AddTransient<IFundoService, FundoService>();
             services.AddTransient<IFundoRepository, FundoRepository>();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
+
             return services;
         }
     }

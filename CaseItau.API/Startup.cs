@@ -1,7 +1,5 @@
 using CaseItau.API.Infrastructure.Extensions;
-using CaseItau.API.Infrastructure.Repositories;
 using CaseItau.API.Mapper.Mappers;
-using CaseItau.Application.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -29,6 +27,7 @@ namespace CaseItau.API
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("AllowAll");
             app.UseSwagger();
             app.UseSwaggerUI();
             app.UseHttpsRedirection();

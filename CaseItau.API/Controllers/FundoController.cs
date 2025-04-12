@@ -25,6 +25,8 @@ namespace CaseItau.API.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<FundoModel>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public async Task<ActionResult<IEnumerable<FundoModel>>> Get()
         {
             try
@@ -38,6 +40,9 @@ namespace CaseItau.API.Controllers
         }
 
         [HttpGet("{codigo}")]
+        [ProducesResponseType(typeof(FundoModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public async Task<ActionResult<FundoModel>> Get([FromRoute] string codigo)
         {
             try
@@ -55,6 +60,8 @@ namespace CaseItau.API.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public async Task<ActionResult> Post([FromBody] FundoModel model)
         {
             try
@@ -69,6 +76,9 @@ namespace CaseItau.API.Controllers
         }
 
         [HttpPut("{codigo}")]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public async Task<ActionResult> Put([FromRoute] string codigo, [FromBody] FundoModel model)
         {
             try
@@ -87,6 +97,9 @@ namespace CaseItau.API.Controllers
         }
 
         [HttpDelete("{codigo}")]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public async Task<ActionResult> Delete([FromRoute] string codigo)
         {
             try
@@ -105,6 +118,9 @@ namespace CaseItau.API.Controllers
         }
 
         [HttpPut("{codigo}/patrimonio")]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public async Task<ActionResult> MovimentarPatrimonio([FromRoute] string codigo, [FromBody] decimal valorPatrimonio)
         {
             try

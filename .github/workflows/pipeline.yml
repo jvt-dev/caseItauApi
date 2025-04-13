@@ -45,6 +45,6 @@ jobs:
     - name: Deploy to Amazon ECS
       run: |
         aws ecs update-service \
-          --cluster my-cluster \
-          --service my-service \
+          --cluster CaseItau \
+          --service caseitau-api-service \
           --force-new-deployment

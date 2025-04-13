@@ -1,0 +1,49 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '3.1.x'
+
+    - name: Set up AWS CLI
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: sa-east-1
+
+    - name: Build Docker Image
+      run: |
+        docker build -t caseitau-api .
+
+    - name: Log in to Amazon ECR
+      run: |
+        aws ecr get-login-password --region sa-east-1 | docker login --username AWS --password-stdin 123456789012.dkr.ecr.sa-east-1.amazonaws.com
+
+    - name: Push Docker image to Amazon ECR
+      run: |
+        docker tag caseitau-api:latest 263015829111.dkr.ecr.sa-east-1.amazonaws.com/caseitau/api:latest
+        docker push 263015829111.dkr.ecr.sa-east-1.amazonaws.com/caseitau/api:latest
+
+    - name: Deploy to Amazon ECS
+      run: |
+        aws ecs update-service \
+          --cluster my-cluster \
+          --service my-service \
+          --force-new-deployment

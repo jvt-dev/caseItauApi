@@ -9,7 +9,7 @@ COPY CaseItau.Mapper/*.csproj ./CaseItau.Mapper/
 COPY CaseItau.Shared/*.csproj ./CaseItau.Shared/
 
 COPY . ./
-RUN dotnet restore /CaseItau.API/CaseItau.API.csproj
+RUN dotnet restore ./CaseItau.API/CaseItau.API.csproj
 
 RUN dotnet publish -c Release -o out
 

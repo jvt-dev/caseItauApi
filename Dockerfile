@@ -17,4 +17,6 @@ FROM mcr.microsoft.com/dotnet/sdk:3.1
 WORKDIR /app
 COPY --from=build /app/out .
 
+EXPOSE 5000
+
 ENTRYPOINT ["dotnet", "CaseItau.API.dll"]

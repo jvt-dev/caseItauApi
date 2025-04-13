@@ -17,9 +17,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up .NET Core
-        uses: actions/setup-dotnet@v3
-        with:
-            dotnet-version: '3.1.426'
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '3.1.426'
+
 
     - name: Set up AWS CLI
       uses: aws-actions/configure-aws-credentials@v1

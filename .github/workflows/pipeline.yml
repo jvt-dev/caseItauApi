@@ -46,5 +46,5 @@ jobs:
       run: |
         aws ecs update-service \
           --cluster CaseItau \
-          --service caseitau-api-service \
+          --service caseitau-api-service-v2 \
           --force-new-deployment

@@ -7,5 +7,13 @@ namespace CaseItau.API.Infrastructure.Context
     {
         public FundoContext(DbContextOptions<FundoContext> options) : base(options) { }
         public DbSet<FundoEntity> Fundo { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<FundoEntity>()
+                .HasOne(f => f.TipoFundo)
+                .WithMany()
+                .HasForeignKey(f => f.CodigoTipo);
+        }
     }
 }

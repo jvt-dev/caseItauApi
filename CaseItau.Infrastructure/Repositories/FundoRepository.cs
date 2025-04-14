@@ -17,6 +17,7 @@ namespace CaseItau.API.Infrastructure.Repositories
 
         public async Task<int> CreateAsync(FundoEntity entity)
         {
+            _context.Entry(entity.TipoFundo).State = EntityState.Unchanged;
             await _context.Set<FundoEntity>().AddAsync(entity);
             return await _context.SaveChangesAsync();
         }
@@ -35,12 +36,12 @@ namespace CaseItau.API.Infrastructure.Repositories
 
         public async Task<FundoEntity> GetEntityByIdAsync(string codigo)
         {
-            return await _context.Set<FundoEntity>().FindAsync(codigo);
+            return await _context.Set<FundoEntity>().Include(i => i.TipoFundo).FirstOrDefaultAsync(x => x.Codigo.Equals(codigo));
         }
 
         public async Task<List<FundoEntity>> GetAllAsync()
         {
-            return await _context.Set<FundoEntity>().ToListAsync();
+            return await _context.Set<FundoEntity>().Include(i => i.TipoFundo).ToListAsync();
         }
     }
 }

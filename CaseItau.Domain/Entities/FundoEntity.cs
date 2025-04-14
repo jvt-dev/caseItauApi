@@ -11,9 +11,10 @@ namespace CaseItau.API.Domain.Entities
         public string Nome { get; private set; }
         public string Cnpj { get; private set; }
         public decimal? Patrimonio { get; private set; }
-        
+
         [Column("CODIGO_TIPO")]
         public int CodigoTipo { get; private set; }
+        public TipoFundoEntity TipoFundo { get; private set; }
 
         public void UpdatePatrimonio(decimal patrimonio)
         {

@@ -7,6 +7,7 @@ namespace CaseItau.API.Infrastructure.Context
     {
         public FundoContext(DbContextOptions<FundoContext> options) : base(options) { }
         public DbSet<FundoEntity> Fundo { get; set; }
+        public DbSet<TipoFundoEntity> TipoFundo { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

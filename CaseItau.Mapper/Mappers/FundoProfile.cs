@@ -3,6 +3,7 @@ using CaseItau.API.Domain.Entities;
 using CaseItau.API.Shared.Dtos;
 using CaseItau.API.Shared.Models;
 using CaseItau.Shared.Dtos;
+using CaseItau.Shared.Models;
 
 namespace CaseItau.API.Mapper.Mappers
 {
@@ -34,6 +35,11 @@ namespace CaseItau.API.Mapper.Mappers
                 .ReverseMap();
 
             CreateMap<TipoFundoEntity, TipoFundoDto>()
+                 .ForMember(dest => dest.Codigo, opt => opt.MapFrom(src => src.Codigo))
+                 .ForMember(dest => dest.Nome, opt => opt.MapFrom(src => src.Nome))
+                 .ReverseMap();
+
+            CreateMap<TipoFundoModel, TipoFundoDto>()
                  .ForMember(dest => dest.Codigo, opt => opt.MapFrom(src => src.Codigo))
                  .ForMember(dest => dest.Nome, opt => opt.MapFrom(src => src.Nome))
                  .ReverseMap();
